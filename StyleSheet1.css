@@ -1,0 +1,320 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    header img {
+        width: 50px;
+        height: auto;
+    }
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login and Register Styles */
+.login-container, .register-container, .profile-container, .settings-container, .donation-container, .chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-header, .register-header, .profile-header, .settings-header, .donation-header, .chat-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form, .register-form, .profile-content, .settings-content, .donation-box, .chat-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+    .input-group label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .input-group input, .input-group textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .input-group button {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .input-group button:hover {
+            background-color: #555;
+        }
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+
+            .sidebar ul li a {
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+
+                .sidebar ul li a img {
+                    width: 20px;
+                    height: auto;
+                    margin-right: 10px;
+                }
+
+                .sidebar ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/* Post Box Styles */
+.post-box {
+    margin-bottom: 20px;
+}
+
+    .post-box textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+    .post-options input[type="file"] {
+        display: none;
+    }
+
+    .post-options label {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .post-options button {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .post-options button:hover {
+            background-color: #555;
+        }
+
+/* Post Styles */
+.posts .post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+    .post-actions button {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .post-actions button:hover {
+            background-color: #555;
+        }
+
+/* Chat Styles */
+.chat-sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+    .chat-sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .chat-sidebar ul li {
+            margin-bottom: 20px;
+        }
+
+            .chat-sidebar ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+                .chat-sidebar ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.chat-main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.chat-messages {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+    .message.received {
+        text-align: left;
+    }
+
+    .message.sent {
+        text-align: right;
+    }
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .chat-input input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .chat-input button {
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .chat-input button:hover {
+            background-color: #555;
+        }
+
+/* Donation Styles */
+.donation-box {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .donation-box h2 {
+        margin-bottom: 20px;
+    }
+
+    .donation-box ol {
+        list-style: none;
+        padding: 0;
+    }
+
+        .donation-box ol li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+/* Settings Styles */
+.settings-links {
+    list-style: none;
+    padding: 0;
+}
+
+    .settings-links li {
+        margin-bottom: 10px;
+    }
+
+.settings-link {
+    color: blue;
+    text-decoration: none;
+}
+
+    .settings-link:hover {
+        text-decoration: underline;
+    }

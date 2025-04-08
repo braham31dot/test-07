@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Eyes on Gaza - Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <link rel="manifest" href="manifest.json">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><img src="chat.png" alt="Chat"> Chat</a></li>
+            <li><a href="#"><img src="donation.png" alt="Donation"> Donation</a></li>
+            <li><a href="#"><img src="profile.png" alt="Profile"> Profile</a></li>
+            <li><a href="#"><img src="privacy.png" alt="Privacy"> Privacy</a></li>
+            <li><a href="#"><img src="settings.png" alt="Settings"> Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="post-box">
+            <textarea placeholder="What's on your mind?"></textarea>
+            <div class="post-options">
+                <input type="file" id="upload-photo" accept="image/*">
+                <label for="upload-photo">Photo</label>
+                <input type="file" id="upload-video" accept="video/*">
+                <label for="upload-video">Video</label>
+                <button type="submit">Post</button>
+            </div>
+        </div>
+        <div class="posts">
+            <!-- Example post -->
+            <div class="post">
+                <p>This is an example post.</p>
+                <div class="post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
